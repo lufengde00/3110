@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-public class panel extends JPanel implements Config {
+public class panel extends JPanel implements Setting {
             private int [][] chessArray;
             
             public panel(int [][] chessArray) {
