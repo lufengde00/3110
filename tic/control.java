@@ -225,6 +225,8 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 		    	  Thread.sleep(350);
 		       }catch(Exception ef) {
 			}
+			// allow AI to put chess
+			// auto put 
 			a.ai();
 			gameWin(a.getmaxi(),a.getmaxj());
 			
@@ -244,11 +246,12 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 		// change mode 
 		// will add "PVE"
 		if (e.getActionCommand().equals("PVP")) {
+			//set color black
 			z = 1;
 		}
 	   // return one step (if put chess in wrong place
 		if (e.getActionCommand().equals("Return")) {
-			System.out.println("2");
+		//	System.out.println("2");
 			for (int i = 0; i < LINE; i++) {
 				for (int j = 0; j < LINE; j++) {
 					chessArray[xx][yy] = 0;
@@ -260,12 +263,15 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 		}
 		// AI mode
 		if(e.getActiongCommand().equals("PVE")){
+			// Let AI work
 		a= new AI2(g, chessArray, j);
+			// set color white
 			z=2;
 		}
 		// reopen a game
 		if (e.getActionCommand().equals("RE")) {
-			System.out.println("1");
+			// check systeam working normally
+		//	System.out.println("1");
 			
 			for (int i = 0; i < LINE; i++) {
 				for (int j = 0; j < LINE; j++) {
