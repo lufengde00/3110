@@ -23,6 +23,7 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 	// color for chess
 	private int count = 0; 
 	// save chess
+	private AI2 a;
 	private int[][] chessArray = new int[LINE + 2][LINE + 2]; 
 
 
@@ -223,7 +224,10 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 			gameWin(xx, yy);
 			try {
 		    	  Thread.sleep(350);
-		       }catch(Exception ef) {}
+		       }catch(Exception ef) {
+			}
+			a.ai();
+			gameWin(a.getmaxi(),a.getmaxj());
 			
 		}
 
@@ -254,6 +258,11 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 			}
 			j.repaint();
 
+		}
+		// AI mode
+		if(e.getActiongCommand().equals("PVE")){
+		a= new AI2(g, chessArray, j);
+			z=2;
 		}
 		// reopen a game
 		if (e.getActionCommand().equals("RE")) {
