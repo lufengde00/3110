@@ -228,7 +228,7 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 			// allow AI to put chess
 			// auto put 
 			a.ai();
-			gameWin(a.getmaxi(),a.getmaxj());
+			gameWin(a.getMAXi(),a.getMAXj());
 			
 		}
 
