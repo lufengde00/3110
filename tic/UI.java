@@ -47,7 +47,7 @@ private int[][] chessArray = new int[LINE+2][LINE+2];
 		Dimension di2=new Dimension(100,60);
 		jbu2.setPreferredSize(di2);
 		jp.add(jbu2);
-		javax.swing.JButton jbu3=new javax.swing.JButton("PVP");
+		javax.swing.JButton jbu3=new javax.swing.JButton("PVE");
 		Dimension di3=new Dimension(100,60);
 		jbu3.setPreferredSize(di3);
 		jp.add(jbu3);
