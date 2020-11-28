@@ -207,7 +207,7 @@ public class control extends MouseAdapter implements Setting, ActionListener {
 		if (chessArray[xx][yy] == 0) {
 			g.setColor(Color.BLACK);
 			chessArray[xx][yy] = -1;
-			g.fillOval(xx * SIZE + X - CHESS / 2, yy * SIZE + Y - CHESS / 2,30， 30);
+			g.fillOval(xx * SIZE + X - CHESS / 2, yy * SIZE + Y - CHESS / 2,30,30);
 		}
 
 	}
